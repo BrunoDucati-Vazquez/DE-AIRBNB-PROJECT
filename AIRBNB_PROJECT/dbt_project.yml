@@ -20,5 +20,9 @@ clean-targets:
 models:
   AIRBNB_PROJECT:
    
-    example:
-      +materialized: view
+    gold:
+      +materialized: table
+      +schema: gold
+      ephemeral:
+        +materialized: ephemeral
+
